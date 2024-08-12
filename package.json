@@ -1,13 +1,14 @@
 {
   "name": "@enhasa/kiwicore",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Kiwi Stuff",
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
     "*.js",
     "*.d.ts",
-    "*.map"
+    "*.map",
+    "types"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
