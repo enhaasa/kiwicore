@@ -1,4 +1,7 @@
-export function isValidCustomer(customer) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidCustomer = void 0;
+function isValidCustomer(customer) {
     try {
         return typeof customer.id === 'number' &&
             typeof customer.name === 'string' &&
@@ -11,3 +14,4 @@ export function isValidCustomer(customer) {
         return false;
     }
 }
+exports.isValidCustomer = isValidCustomer;

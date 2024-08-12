@@ -1,6 +1,6 @@
 {
   "name": "@enhasa/kiwicore",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "Kiwi Stuff",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

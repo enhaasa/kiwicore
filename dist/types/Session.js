@@ -1,4 +1,7 @@
-export function isValidSession(data) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidSession = void 0;
+function isValidSession(data) {
     try {
         const isChannelValid = data.channel &&
             typeof data.channel.name === 'number' &&
@@ -21,3 +24,4 @@ export function isValidSession(data) {
         return false;
     }
 }
+exports.isValidSession = isValidSession;

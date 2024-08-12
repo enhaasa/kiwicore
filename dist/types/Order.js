@@ -1,4 +1,7 @@
-export function isValidOrder(order) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidOrder = void 0;
+function isValidOrder(order) {
     try {
         return typeof order.is_delivered === 'boolean' &&
             typeof order.name === 'string' &&
@@ -17,3 +20,4 @@ export function isValidOrder(order) {
         return false;
     }
 }
+exports.isValidOrder = isValidOrder;

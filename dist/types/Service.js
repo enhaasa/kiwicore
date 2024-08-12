@@ -1,4 +1,7 @@
-export function isValidService(service) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidService = void 0;
+function isValidService(service) {
     try {
         return typeof service.is_completed === 'boolean' &&
             typeof service.name === 'string' &&
@@ -15,3 +18,4 @@ export function isValidService(service) {
         return false;
     }
 }
+exports.isValidService = isValidService;

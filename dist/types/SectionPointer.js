@@ -1,4 +1,7 @@
-export function isValidSectionPointer(sectionPointer) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidSectionPointer = void 0;
+function isValidSectionPointer(sectionPointer) {
     try {
         return typeof sectionPointer.id === 'number' &&
             typeof sectionPointer.type === 'string' &&
@@ -12,3 +15,4 @@ export function isValidSectionPointer(sectionPointer) {
         return false;
     }
 }
+exports.isValidSectionPointer = isValidSectionPointer;

@@ -2,7 +2,7 @@
     "compilerOptions": {
       "outDir": "./dist",
       "rootDir": "./src",
-      "module": "ESNext",
+      "module": "commonjs",
       "target": "ES6",
       "declaration": true,
       "declarationDir": "./dist",

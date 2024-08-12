@@ -1,4 +1,7 @@
-export function isValidCharacter(data) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidCharacter = void 0;
+function isValidCharacter(data) {
     try {
         return typeof data.id === 'number' &&
             typeof data.bio === 'string' &&
@@ -20,3 +23,4 @@ export function isValidCharacter(data) {
         return false;
     }
 }
+exports.isValidCharacter = isValidCharacter;

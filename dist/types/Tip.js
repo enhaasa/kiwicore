@@ -1,4 +1,7 @@
-export function isValidTip(tip) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidTip = void 0;
+function isValidTip(tip) {
     try {
         return typeof tip.name === 'string' &&
             typeof tip.amount === 'number' &&
@@ -11,3 +14,4 @@ export function isValidTip(tip) {
         return false;
     }
 }
+exports.isValidTip = isValidTip;

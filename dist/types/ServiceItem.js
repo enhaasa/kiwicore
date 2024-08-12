@@ -1,4 +1,7 @@
-export function isValidServiceItem(item) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidServiceItem = void 0;
+function isValidServiceItem(item) {
     try {
         return typeof item.id === 'number' &&
             typeof item.name === 'string' &&
@@ -14,3 +17,4 @@ export function isValidServiceItem(item) {
         return false;
     }
 }
+exports.isValidServiceItem = isValidServiceItem;

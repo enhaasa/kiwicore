@@ -1,4 +1,7 @@
-export function isValidDiningItem(item) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidDiningItem = void 0;
+function isValidDiningItem(item) {
     try {
         return typeof item.id === 'number' &&
             typeof item.name === 'string' &&
@@ -19,3 +22,4 @@ export function isValidDiningItem(item) {
         return false;
     }
 }
+exports.isValidDiningItem = isValidDiningItem;

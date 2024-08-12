@@ -1,4 +1,7 @@
-export function isValidSection(section) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidSection = void 0;
+function isValidSection(section) {
     try {
         return typeof section.id === 'number' &&
             typeof section.name === 'string' &&
@@ -11,3 +14,4 @@ export function isValidSection(section) {
         return false;
     }
 }
+exports.isValidSection = isValidSection;

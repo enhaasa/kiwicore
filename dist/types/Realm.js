@@ -1,4 +1,7 @@
-export function isValidRealm(realm) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidRealm = void 0;
+function isValidRealm(realm) {
     try {
         return typeof realm.id === 'number' &&
             typeof realm.address === 'string' &&
@@ -12,3 +15,4 @@ export function isValidRealm(realm) {
         return false;
     }
 }
+exports.isValidRealm = isValidRealm;
