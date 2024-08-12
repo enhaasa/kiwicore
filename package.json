@@ -1,18 +1,16 @@
 {
   "name": "@enhasa/kiwicore",
-  "version": "1.0.4",
+  "version": "1.0.2",
   "description": "Kiwi Stuff",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "*.js",
-    "*.d.ts",
-    "*.map",
-    "types"
+    "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "postbuild": "mv build/* . && rm -r build"
   },
   "keywords": [],
   "author": "",

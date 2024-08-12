@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
-      "outDir": "./",
+      "outDir": "./dist",
       "rootDir": "./src",
       "module": "ESNext",
       "target": "ES6",
       "declaration": true,
-      "declarationDir": "./",
+      "declarationDir": "./dist",
       "declarationMap": true,
       "moduleResolution": "node",
       "esModuleInterop": true,
