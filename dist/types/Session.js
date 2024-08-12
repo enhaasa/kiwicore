@@ -1,12 +1,12 @@
 export function isValidSession(data) {
     try {
-        var isChannelValid = data.channel &&
+        const isChannelValid = data.channel &&
             typeof data.channel.name === 'number' &&
             typeof data.channel.section_name === 'string' &&
             typeof data.channel.section_id === 'number';
-        var areCustomersValid = Array.isArray(data.customers) &&
-            data.customers.every(function (customer) { return typeof customer === 'string'; });
-        var areOrdersValid = Array.isArray(data.orders);
+        const areCustomersValid = Array.isArray(data.customers) &&
+            data.customers.every((customer) => typeof customer === 'string');
+        const areOrdersValid = Array.isArray(data.orders);
         return (typeof data.id === 'number' &&
             isChannelValid &&
             areCustomersValid &&
