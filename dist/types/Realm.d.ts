@@ -1,6 +1,8 @@
 export type TRealm = {
     id: number;
     address: string;
+    alias: string;
+    discord_invite_link: string;
     founding_date: string;
     name: string;
     image_url: string;

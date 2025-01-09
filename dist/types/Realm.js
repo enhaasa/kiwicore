@@ -6,6 +6,8 @@ function isValidRealm(realm) {
         return typeof realm.id === 'number' &&
             typeof realm.address === 'string' &&
             typeof realm.founding_date === 'string' &&
+            typeof realm.alias === 'string' &&
+            typeof realm.discord_invite_link === 'string' &&
             typeof realm.name === 'string' &&
             typeof realm.image_url === 'string' &&
             typeof realm.link === 'string';
